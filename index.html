@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Yoga</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <a class="logo" href="index.html">Yogi's <span>Choice</span> </a>
+          <img
+            id="mobile-cta"
+            class="mobile-menu"
+            src="./images/menu.svg"
+            alt="Open navigation"
+          />
+          <nav>
+            <img
+              id="mobile-exit"
+              class="mobile-menu-exit"
+              src="./images/exit.svg"
+              alt="Close navigation"
+            />
+            <ul class="primary-nav">
+              <li class="current"><a href="#">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <ul class="secondary-nav">
+              <li><a href="#contact">Contact</a></li>
+              <li class="go-premium"><a href="#">Go Premium</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container-hero">
+          <div class="left-col">
+            <p class="subhead">Your first yoga practice</p>
+            <h1>Beginners friendly yoga</h1>
+            <div class="hero-btns">
+              <a href="#" class="primary-btn">Try for free</a>
+              <a href="#" class="watch-video">
+                <img
+                  src="./images/watch.svg"
+                  alt="Watch a video about yoga"
+                />Yoga basics
+              </a>
+            </div>
+          </div>
+          <img class="hero-img" src="./images/yoga.jpg" alt="Yoga image" />
+        </div>
+      </section>
+      <section class="features-section" id="features">
+        <div class="container">
+          <ul class="features-items">
+            <li>Keep your mind healthy</li>
+            <li>Reduce stress</li>
+            <li>Boost your immune system</li>
+            <li>Increase happiness and well being</li>
+            <li>Lose weight and change your body shape</li>
+            <li>Make yoga friends</li>
+          </ul>
+        </div>
+      </section>
+      <div class="testimonials-section">
+        <div class="slide">
+          <div class="slide-img">
+            <img src="./images/Yoga-1.jpg" alt="user-profile" />
+          </div>
+          <div>
+            <cite> Caroline P.</cite>
+            <blockquote>
+              Thank you! That was a really enjoyable experience and I love that
+              there's no odd, distracting music in the background. Gives us a
+              chance to choose what we wanna hear, or none at all.
+            </blockquote>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-img">
+            <img src="./images/yoga-2.jpg"" alt="user-profile" />
+          </div>
+          <div>
+            <cite> Deborah D.</cite>
+            <blockquote>
+              I haven't practised yoga in ages and never was consistent with it.
+              This was the perfect video for jumping back in; gentle but not TOO
+              easy. Loved it.
+            </blockquote>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-img">
+            <img src="./images/yoga-3.jpg" alt="user-profile" />
+          </div>
+          <div>
+            <cite> Kristen C.</cite>
+            <blockquote>
+              This was my first time trying Yoga ever! You made it seem so
+              simple. I'll keep coming back so I can get the poses just right.
+            </blockquote>
+          </div>
+        </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </main>
+    <section>
+      <footer>
+        <q>Find What Feels Good</q> 
+        <div class="container-footer" id="contact">
+          <div class="contact">
+            <h2>Contact Us</h2>
+            <form action="">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" /> <br>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" /> <br>
+              <label for="message">Message:</label> 
+              <textarea
+                placeholder="Your message:"
+                name="message"
+                id="message"
+                cols="20"
+                rows="8"
+              ></textarea> <br>
+              <input
+                type="submit"
+                class="send-message-btn"
+                value="Send message"
+              />
+            </form>
+          </div>
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216222.39266656333!2d14.475526392867376!3d45.01459449522238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47637209729f04d1%3A0x26120dd1806a9b6a!2sKrk!5e0!3m2!1sen!2shr!4v1613072113051!5m2!1sen!2shr"
+              width="400"
+              height="300"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+            
+          </div>
+        </div>
+        <p> &#169; Ines Mazalovic 2021</p>
+      </footer>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
